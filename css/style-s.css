@@ -1,0 +1,271 @@
+.top-bar{
+  display: block;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+  height: 80px;
+}
+
+#title {
+  float: left;
+  display: block;
+  margin: 15px 10px;
+}
+
+.logo{
+  float: right;
+  margin: 10px 40px;
+  height: 55px;
+  width: 55px;
+}
+
+fieldset {
+  vertical-align: middle;
+  text-align: center;
+  border: 1px double darkgrey;
+}
+
+.foot-dq{
+  height: 315px;
+}
+
+
+/* 留言板 */
+.lyb{
+  overflow: auto;
+  width: 750px;
+  height: 333px;
+  margin-left: 100px;
+}
+
+.wrap{
+  width: 600px;
+  margin: 0px auto;
+}
+
+.add{
+  width: 500px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.add div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add div div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.add input[type="url"]{
+  color: chocolate;
+  border: 1px solid #777;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.codediv{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 5px;
+}
+
+.code {
+  margin-right: 3px;
+  background: url(../img/code_bg.png);
+  font-family: Arial;
+  font-style: italic;
+  color: white;
+  font-size: 17px;
+  border: 0;
+  border-radius: 5px;
+  padding: 1px 3px 1px 5px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+  width: 70px;
+  height: 21px;
+  line-height: 21px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.code-input{
+  color: #4876ff;
+  border: 1px solid #777;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 15px;
+  font-size: 15px;
+  width: 121px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.success-info{
+  display: inline-block;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 0px 5px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: tomato;
+  background: whitesmoke;
+}
+
+.add .content{
+  resize: none;
+  border: 1px solid #777;
+  box-sizing: border-box;
+  width: 495px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  line-height: 15px;
+  font-size: 15px;
+  text-indent: 15px;
+  outline: none;
+}
+
+.add .user{
+  color: #4876ff;
+  border: 1px solid #777;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.add .btn{
+  background: tomato;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid chocolate;
+  color: white;
+  width: 90px;
+  margin-right: 5px;
+  outline: none;
+  height: 23px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+.add .btn:hover{
+  background: white;
+  color: tomato;
+  transition: 0.3s;
+}
+
+.add .btn:active{
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.msg{
+  margin: 10px auto;
+  background: rgba(0,0,0,0.05);
+  border-radius: 8px;
+  width: 500px;
+  height: 100%;
+}
+
+.msg .info{
+  overflow: hidden;
+}
+
+.msg .info .user{
+  float: left;
+  padding: 2px 5px;
+  color: #4876ff;
+  font-size: 14px;
+  line-height: 14px;
+  height: 30px;
+}
+
+.msg .info .time{
+  padding: 2px 5px;
+  float: right;
+  color: peru;
+  font-size: 14px;
+  line-height: 14px;
+  height: 30px;
+}
+
+.msg .content{
+  padding: 5px 5px;
+  width: 400px;
+  margin: 0px auto 10px;
+}
+
+.add-tx{
+  vertical-align: middle;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 650px;
+}
+
+.tx{
+  margin: 12px 2px 4px 10px;
+  width: 60px;
+  height: 60px;
+  border: 1px dotted antiquewhite;
+  border-radius: 60px;
+  float: left;
+}
+
+.tx:hover{
+  margin: 12px 2px 4px 10px;
+  width: 60px;
+  height: 60px;
+  border: 1px double tomato;
+  border-radius: 60px;
+  transform: rotate(360deg);
+  transition-duration: 1.3s;
+  float: left;
+}
+
+/*定义滚动条高宽及背景
+ 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width: 13px;
+  height: 13px;
+  background-color: rgba(0,0,0,0);
+}
+
+/*定义滚动条轨道
+ 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/*定义滑块
+ 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #888;
+}
